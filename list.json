@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "JS高级程序",
+        "price": 80,
+        "discount": 1
+    },
+    {
+        "id": 2,
+        "name": "JS数据结构与算法",
+        "price": 40,
+        "discount": 1
+    },
+    {
+        "id": 3,
+        "name": "JS语言精萃",
+        "price": 30,
+        "discount": 0
+    }
+]

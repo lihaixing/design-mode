@@ -5,8 +5,15 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, './release'), //本地服务器加载页面所在的目录
         open: true,
-        port: 9000
+        port: 9000,
+        proxy: {
+            "/api": {
+                target: "http://localhost:9001",
+                pathRewrite: { "^/api": "" }
+            }
+        }
     },
+    devtool: 'source-map',
     module: {
         rules: [
             {
@@ -14,9 +21,6 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
-                    options: {
-                        presets: ['babel-preset-env'], // 没有这个语法规范，仍然无法转义
-                    }
                 }
             }
         ]

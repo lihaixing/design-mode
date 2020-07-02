@@ -46,13 +46,24 @@ li.study();
  * 二、ES6不支持，一般认为_开头的属性就是private
  */
 
-import myJquery from './myJquery'
-myJquery()
+// import myJquery from './myJquery'
+// myJquery()
 // $('.myText').text('你好好好')
 
 // UML
-import LHX from './UML'
-console.log(LHX)
+// import LHX from './UML'
+// console.log(LHX)
 
 // promise说明设计原则
-import './5.设计原则栗子'
+// import './5.设计原则栗子'
+
+// import './3.打车面试题'
+// import './park'
+
+// import './1Factory'
+// import './2Singleton/loginDialog'
+// import './3Adapter'
+// import './4decorator/demo2'
+// import './6Observers'
+// import './9other/bridge'
+import './10demo'

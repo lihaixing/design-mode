@@ -28,5 +28,3 @@ result.then(function (res) {
 }).catch(function (ex) {
     console.log(ex)
 })
-
-import './3.打车面试题'
